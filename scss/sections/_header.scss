@@ -1,6 +1,16 @@
 .header {
-  padding: 25px 0;
+  padding: 16px 0;
   border-bottom: 1px solid $header-line;
+
+
+
+  @media screen and (min-width: 768px) {
+    padding: 26px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 25px 0;
+  }
+
 
   & > .container {
     display: flex;
@@ -10,12 +20,24 @@
   &__logo {
     color: $logo-color;
     font-family: "Raleway";
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.38;
-    letter-spacing: 0.78px;
-    margin-right: 93px;
+    letter-spacing: 0.72px;
+    margin-right: auto;
     animation: logo-scale 5000ms alternate infinite;
+
+    @media screen and (min-width: 768px) {
+    margin-right: 88px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      letter-spacing: 0.78px;
+      margin-right: 93px;
+    }
+
+    
 
     @keyframes logo-scale {
       0% {
@@ -32,9 +54,21 @@
   }
 
   &__list {
-    display: flex;
-    gap: 50px;
     margin-left: auto;
+    display: none;
+
+   
+
+
+@media screen and (min-width: 768px) {
+  flex-direction: column;
+  gap: 10px;
+  display: flex;
+}
+@media screen and (min-width: 1200px) {
+  flex-direction: row;
+  gap: 30px;
+}
   }
 
   &__item {
@@ -51,6 +85,9 @@
     align-items: center;
     gap: 10px;
 
+
+
+    
     &:hover,
     &:focus {
       .header__cell {
@@ -64,11 +101,15 @@
 
   &__cell {
     color: $added-text;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
+  font-size: 14px;
+    }
   }
 
   &__icon {
@@ -82,8 +123,11 @@
 
 .nav {
   &__list {
-    display: flex;
+    display: none;
     gap: 50px;
+@media screen and (min-width: 768px) {
+  display: flex;
+}
   }
 
   &__item {
