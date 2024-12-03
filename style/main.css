@@ -351,6 +351,7 @@ h1, h2, h3, p {
   padding-top: 94px;
   padding-bottom: 94px;
   text-align: center;
+  display: none;
 }
 .work__title {
   color: #212121;
