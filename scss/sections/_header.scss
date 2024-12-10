@@ -27,6 +27,8 @@
     margin-right: auto;
     animation: logo-scale 5000ms alternate infinite;
 
+
+
     @media screen and (min-width: 768px) {
     margin-right: 88px;
     }
@@ -36,6 +38,10 @@
       letter-spacing: 0.78px;
       margin-right: 93px;
     }
+
+
+
+
 
     
 
@@ -47,6 +53,24 @@
         transform: scale(1.1);
       }
     }
+  }
+
+  &__button {
+    border: none;
+    background: transparent; 
+    width: 40px;
+    height: 40px;
+
+    @media  screen and (min-width: 768px) {
+      display: none;
+      
+    }
+  }
+
+  &__burger {
+    width: 40px;
+    height: 40px;
+    fill: black;
   }
 
   &__color {
@@ -172,4 +196,76 @@
     opacity: 1;
     transform: scale(1);
   }
+}
+// ===============================================
+
+.menu {
+  z-index: 1;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $title-color;
+  padding: 48px 0px 48px 40px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+
+  &__button {
+    background-color: transparent;
+    position: absolute;
+    top: 10px; right: 15px;
+    border: none;
+
+  }
+  &__close {
+    width: 40px;
+  height: 40px;
+    fill: $logo-color;
+  }
+
+  &__item:first-child {
+margin-bottom: 36px;
+  }
+
+  &__item:last-child {
+    margin-top: 32px;
+    margin-bottom: 200px;
+  }
+
+&__link {
+  color: $text-color;
+font-size: 40px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.8px;
+
+&:hover {
+  color: $accent-color;
+}
+}
+&__item-contact:first-child {
+  margin-bottom: 32px;
+
+
+.menu__contact-link {
+  color: $accent-color;
+  font-family: "Roboto";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.68px;
+}
+}
+
+&__contact-link {
+  color: #757575;
+font-family: "Roboto";
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.48px;
+}
+
+
 }
