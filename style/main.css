@@ -313,12 +313,12 @@ h1, h2, h3, p {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/table/hero-table@1x.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet/hero-tablet@1x.webp);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/table/hero-table@2x.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet/hero-tablet@2x.webp);
   }
 }
 @media screen and (min-width: 1200px) {
